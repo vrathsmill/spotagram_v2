@@ -2,8 +2,6 @@ const client_id = config.MY_CLIENT_ID
 const client_secret = config.MY_SECRET
 const credentials = btoa((client_id + ':' + client_secret))
 
-
-
 function spotifyRequest(query) {
   $.ajax({
     url: 'https://accounts.spotify.com/api/token',
@@ -30,8 +28,6 @@ function spotifyRequest(query) {
   }
 }
 
-
-
 function trackWasFound(response) {
   let track = response.tracks.items[0]
   if (track !== undefined) {
@@ -46,7 +42,7 @@ function searchTracksAgain(query) {
   $.ajax({
     url: 'https://api.spotify.com/v1/search',
     data: {
-      q: "party",
+      q: 'party',
       type: 'track'
     },
     success: function (response) {

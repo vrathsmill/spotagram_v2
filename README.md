@@ -1,3 +1,3 @@
-An interactive photo wall that plays songs correlated to their pictures. Pulled from flickr and spotify apis.
+An interactive photo wall that plays songs from Spotify based on a Flickr photo's title. 
 
-check it out on: spotagram.herokuapp.com
+Check it out on: https://powerful-dusk-44672.herokuapp.com/spotagram.html

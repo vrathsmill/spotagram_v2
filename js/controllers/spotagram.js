@@ -1,6 +1,6 @@
-// const client_id = config.MY_CLIENT_ID
-// const client_secret = config.MY_SECRET
-// const credentials = btoa((client_id + ':' + client_secret))
+const client_id = '1d3c091026ef459f84cc931f44cf5978'
+const client_secret = 'f732fc42cc9841b7a24f59166b1a8214'
+const credentials = btoa((client_id + ':' + client_secret))
 
 function spotifyRequest(query) {
   $.ajax({

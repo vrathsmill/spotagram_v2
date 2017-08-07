@@ -2,7 +2,7 @@ var flickrImages = []
 audio = new Audio()
 
 function loadPics() {$("document").ready( () => {
-    var url = `https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=${FLICKR_KEY}&safe_search=1&per_page=90`
+    var url = `https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=efe4b70c4305a6acd282eecd95f260ca&safe_search=1&per_page=90`
     $.getJSON(url + "&format=json&jsoncallback=?", function(data) {
       $.each(data.photos.photo, function(i, item){
         if ( i == 100 )
